@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #DCE35B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.draw-btn,.new-deck-btn{
+   background-color: #FFF100;
+   cursor: pointer;
+   border: none;
+   font-size: 20;
+   padding: 10px;
+   font-weight: bold;
+}
+
+.draw-btn {
+    align-self: stretch;
+}
+.new-deck-btn{
+    align-self: flex-start;
+    border-radius: 5px;
+}
+
+div.card-slot {
+    border: 1px solid;
+    border-radius: 5px;
+    height: 120px;
+    width: calc(120px * 5 / 7);
+}
+div.card-slot:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+img.card {
+    width: 100%;
+    height: 100%;
+}
+
+.number-cards {
+    margin-top: 0;
+ 
+}
+
+.top-div {
+    display: flex;
+    align-self: flex-start;
+}
+
+.number-cards {
+    margin-left: 10px;
+    margin-top: 10px;
+   
+}
+
+.draw-btn:disabled {
+    cursor: not-allowed;
+}
